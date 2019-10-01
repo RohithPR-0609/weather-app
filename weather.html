@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <title>Weather info</title>
+  
+</head>
+<body onload="getLocation()">
+  <center>
+    <div class="card">
+<div class="card" style="width:60%;">
+       <div class="card-body">
+            <h2>weather info</h2>
+          <div class="row">
+              
+            <div class="col-md-4 ">
+                <h1 id="week_day">day</h1> 
+                <div class="icon">
+                    <img src="icons/unknown.png" alt="" class="logo_icon">
+                </div>
+                <div class="temperature">
+                        <p id="highest_temp">-&degC</p>|<p id="lowest_temp">-&degC</p>
+                    </div>
+     
+                <h2 id="highest_temp"></h2>
+                <h2 id="lowest_temp"></h2>
+            </div>
+            <div class="col-md-8 city_name_container" id="city_name_container">
+                    <div class="dropdown">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                   
+                            </button>
+                         
+                            <div class="dropdown-menu">
+                              <button onclick="getCity('40.7306', '-73.9867')" class="dropdown-item">New York</button>
+                              <button onclick="getCity('25.2684', '55.2962')" class="dropdown-item">Dubai</button>
+                              <button onclick="getCity('52.3728', '4.8936')" class="dropdown-item">Amsterdam</button>
+                            </div>
+                          </div>
+                    <h1 id="greet_user"></h1>
+                <h1 id="city_name">current city </h1> 
+              
+            </div>
+           
+        </div>
+        <div class="row" id="second_row" style="margin-top: 22px;">
+            <div class="col-md-3">
+                <h4 id="day1">next days</h4>
+                <div class="icon1">
+                    <img src="icons/unknown.png" alt="">
+                </div>
+                
+                <div class=".temperature">
+                 <p id="max_temp_2">-&degC</p>|<p id="min_temp_2">-&degC</p> 
+                </div>
+       </div>
+            <div class="col-md-3">
+                    <h4 id="day2">next days</h4>
+                <div class="icon2">
+                    <img src="icons/unknown.png" alt="">
+                </div>
+             
+                    <p id="max_temp_3">-&degC</p> | <p id="min_temp_3">-&degC</p>
+             
+             
+              
+            </div>
+            <div class="col-md-3">
+                    <h4 id="day3">next days</h4>
+                <div class="icon3">
+                    <img src="icons/unknown.png" alt="">
+                </div>
+               
+                    <p id="max_temp_4">-&degC</p> | <p id="min_temp_4">-&degC</p>
+              
+              
+              
+            </div>
+            <div class="col-md-3">
+                    <h4 id="day4">next days</h4>
+                <div class="icon4">
+                    <img src="icons/unknown.png" alt="">
+                </div>
+               <p id="max_temp_5">-&degC</p> | <p id="min_temp_5">-&degC</p>
+               
+             
+            </div>
+            
+        </div>
+       
+</div>
+</div>
+      
+  
+  </center> 
+  <script src="weather.js"></script>   
+  <script src="city.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   
+
+</body>
+</html>
